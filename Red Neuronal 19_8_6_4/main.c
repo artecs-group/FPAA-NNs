@@ -25,7 +25,7 @@ void main(int argc, char** argv){
 
 		printf("******************************\n");
 		printf("*********RED NEURONAL*********\n");
-		printf("*********v.2021-03-18*********\n");
+		printf("*********v.2021-11-05*********\n");
 
 		while (1) {
 
