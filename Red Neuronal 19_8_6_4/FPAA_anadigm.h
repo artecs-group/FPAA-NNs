@@ -34,6 +34,7 @@ extern "C" {
 	void generarInput(an_Chip FPAA, an_CAM cam, int numPlaca, double voltOut);
 	void modificarPeso(an_Chip FPAA, an_CAM cam, int numPlaca, double peso1, double peso2, double peso3, double peso4);
 	void establecerValoresLUT(an_Chip FPAA, an_CAM cam, int numPlaca, double *valores);
+	void modificarFactorPrevioLUT(an_Chip FPAA, an_CAM cam, int numPlaca, double factor);
 
 	HANDLE HdComm1;
 	HANDLE HdComm2;

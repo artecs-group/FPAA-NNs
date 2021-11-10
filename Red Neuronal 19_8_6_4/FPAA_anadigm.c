@@ -1604,3 +1604,97 @@ void establecerValoresLUT(an_Chip FPAA, an_CAM cam, int numPlaca, double *valore
 		an_10_ClearApexReconfigData(FPAA);
 	}
 }
+
+void modificarFactorPrevioLUT(an_Chip FPAA, an_CAM cam, int numPlaca, double factor) {
+	const an_Byte* configData;
+	int dataSize = 0;
+
+	if (numPlaca == 2) {
+		an_2_setGainHold(cam, factor);
+
+		/* Get a pointer to the reconfiguration data */
+		dataSize = 0;
+		configData = an_2_GetApexReconfigData(FPAA, &dataSize);
+		/* Send the data to the chip */
+		Configure_FPAA(UPD, configData, dataSize, HdComm2);
+		/* OK. Data sent, now clear the buffer to get ready to call some more CAM func-tions. */
+		an_2_ClearApexReconfigData(FPAA);
+	}
+	else if (numPlaca == 4) {
+		an_4_setGainHold(cam, factor);
+
+		/* Get a pointer to the reconfiguration data */
+		dataSize = 0;
+		configData = an_4_GetApexReconfigData(FPAA, &dataSize);
+		/* Send the data to the chip */
+		Configure_FPAA(UPD, configData, dataSize, HdComm4);
+		/* OK. Data sent, now clear the buffer to get ready to call some more CAM func-tions. */
+		an_4_ClearApexReconfigData(FPAA);
+	}
+	else if (numPlaca == 5) {
+		an_5_setGainHold(cam, factor);
+
+		/* Get a pointer to the reconfiguration data */
+		dataSize = 0;
+		configData = an_5_GetApexReconfigData(FPAA, &dataSize);
+		/* Send the data to the chip */
+		Configure_FPAA(UPD, configData, dataSize, HdComm5);
+		/* OK. Data sent, now clear the buffer to get ready to call some more CAM func-tions. */
+		an_5_ClearApexReconfigData(FPAA);
+	}
+	else if (numPlaca == 6) {
+		an_6_setGainHold(cam, factor);
+
+		/* Get a pointer to the reconfiguration data */
+		dataSize = 0;
+		configData = an_6_GetApexReconfigData(FPAA, &dataSize);
+		/* Send the data to the chip */
+		Configure_FPAA(UPD, configData, dataSize, HdComm6);
+		/* OK. Data sent, now clear the buffer to get ready to call some more CAM func-tions. */
+		an_6_ClearApexReconfigData(FPAA);
+	}
+	else if (numPlaca == 7) {
+		an_7_setGainHold(cam, factor);
+
+		/* Get a pointer to the reconfiguration data */
+		dataSize = 0;
+		configData = an_7_GetApexReconfigData(FPAA, &dataSize);
+		/* Send the data to the chip */
+		Configure_FPAA(UPD, configData, dataSize, HdComm7);
+		/* OK. Data sent, now clear the buffer to get ready to call some more CAM func-tions. */
+		an_7_ClearApexReconfigData(FPAA);
+	}
+	else if (numPlaca == 8) {
+		an_8_setGainHold(cam, factor);
+
+		/* Get a pointer to the reconfiguration data */
+		dataSize = 0;
+		configData = an_8_GetApexReconfigData(FPAA, &dataSize);
+		/* Send the data to the chip */
+		Configure_FPAA(UPD, configData, dataSize, HdComm8);
+		/* OK. Data sent, now clear the buffer to get ready to call some more CAM func-tions. */
+		an_8_ClearApexReconfigData(FPAA);
+	}
+	else if (numPlaca == 9) {
+		an_9_setGainHold(cam, factor);
+
+		/* Get a pointer to the reconfiguration data */
+		dataSize = 0;
+		configData = an_9_GetApexReconfigData(FPAA, &dataSize);
+		/* Send the data to the chip */
+		Configure_FPAA(UPD, configData, dataSize, HdComm9);
+		/* OK. Data sent, now clear the buffer to get ready to call some more CAM func-tions. */
+		an_9_ClearApexReconfigData(FPAA);
+	}
+	else if (numPlaca == 10) {
+		an_10_setGainHold(cam, factor);
+
+		/* Get a pointer to the reconfiguration data */
+		dataSize = 0;
+		configData = an_10_GetApexReconfigData(FPAA, &dataSize);
+		/* Send the data to the chip */
+		Configure_FPAA(UPD, configData, dataSize, HdComm10);
+		/* OK. Data sent, now clear the buffer to get ready to call some more CAM func-tions. */
+		an_10_ClearApexReconfigData(FPAA);
+	}
+}

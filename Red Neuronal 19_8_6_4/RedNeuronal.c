@@ -249,10 +249,12 @@ void establecerPesos(int reduccion) {
 	//FPAA2_2 *
 	modificarPeso(an_2_FPAA2_2, an_2_FPAA2_2_SumadorNeurona2_2_1, 2, pesosCapa1[15 * numNeuronasCapa1 + 0] / reduccion, pesosCapa1[16 * numNeuronasCapa1 + 0] / reduccion, -1, -1);
 	modificarPeso(an_2_FPAA2_2, an_2_FPAA2_2_SumadorNeurona2_2_2, 2, 1, 1, pesosCapa1[17 * numNeuronasCapa1 + 0] / reduccion, pesosCapa1[18 * numNeuronasCapa1 + 0] / reduccion);
+	modificarFactorPrevioLUT(an_2_FPAA2_2, an_2_FPAA2_2_GainHold2_2_3, 2, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//FPAA2_3 *
 	modificarPeso(an_2_FPAA2_3, an_2_FPAA2_3_SumadorNeurona2_3_1, 2, pesosCapa1[17 * numNeuronasCapa1 + 1] / reduccion, pesosCapa1[18 * numNeuronasCapa1 + 1] / reduccion, -1, -1);
 	modificarPeso(an_2_FPAA2_3, an_2_FPAA2_3_SumadorNeurona2_3_2, 2, 1, 1, pesosCapa1[15 * numNeuronasCapa1 + 1] / reduccion, pesosCapa1[16 * numNeuronasCapa1 + 1] / reduccion);
+	modificarFactorPrevioLUT(an_2_FPAA2_3, an_2_FPAA2_3_GainHold2_3_3, 2, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//NEURONAS 3 & 4 /////////////////////////////////////
 
@@ -283,10 +285,12 @@ void establecerPesos(int reduccion) {
 	//FPAA4_1 *
 	modificarPeso(an_4_FPAA4_1, an_4_FPAA4_1_SumadorNeurona4_1_1, 4, pesosCapa1[15 * numNeuronasCapa1 + 2] / reduccion, pesosCapa1[16 * numNeuronasCapa1 + 2] / reduccion, -1, -1);
 	modificarPeso(an_4_FPAA4_1, an_4_FPAA4_1_SumadorNeurona4_1_2, 4, 1, 1, pesosCapa1[17 * numNeuronasCapa1 + 2] / reduccion, pesosCapa1[18 * numNeuronasCapa1 + 2] / reduccion);
+	modificarFactorPrevioLUT(an_4_FPAA4_1, an_4_FPAA4_1_GainHold4_1_3, 4, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//FPAA4_2 *
 	modificarPeso(an_4_FPAA4_2, an_4_FPAA4_2_SumadorNeurona4_2_1, 4, pesosCapa1[17 * numNeuronasCapa1 + 3] / reduccion, pesosCapa1[18 * numNeuronasCapa1 + 3] / reduccion, -1, -1);
 	modificarPeso(an_4_FPAA4_2, an_4_FPAA4_2_SumadorNeurona4_2_2, 4, 1, 1, pesosCapa1[15 * numNeuronasCapa1 + 3] / reduccion, pesosCapa1[16 * numNeuronasCapa1 + 3] / reduccion);
+	modificarFactorPrevioLUT(an_4_FPAA4_2, an_4_FPAA4_2_GainHold4_2_3, 4, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//NEURONAS 5 & 6 /////////////////////////////////////
 
@@ -315,12 +319,14 @@ void establecerPesos(int reduccion) {
 	//FPAA5_4 *
 	modificarPeso(an_5_FPAA5_4, an_5_FPAA5_4_SumadorNeurona5_4_1, 5, pesosCapa1[15 * numNeuronasCapa1 + 4] / reduccion, pesosCapa1[16 * numNeuronasCapa1 + 4] / reduccion, -1, -1);
 	modificarPeso(an_5_FPAA5_4, an_5_FPAA5_4_SumadorNeurona5_4_2, 5, 1, 1, pesosCapa1[17 * numNeuronasCapa1 + 4] / reduccion, pesosCapa1[18 * numNeuronasCapa1 + 4] / reduccion);
+	modificarFactorPrevioLUT(an_5_FPAA5_4, an_5_FPAA5_4_GainHold5_4_3, 5, reduccion); //restaurar el factor previo el uso de la LUT
 
 	///////////
 
 	//FPAA6_1 *
 	modificarPeso(an_6_FPAA6_1, an_6_FPAA6_1_SumadorNeurona6_1_1, 6, pesosCapa1[17 * numNeuronasCapa1 + 5] / reduccion, pesosCapa1[18 * numNeuronasCapa1 + 5] / reduccion, -1, -1);
 	modificarPeso(an_6_FPAA6_1, an_6_FPAA6_1_SumadorNeurona6_1_2, 6, 1, 1, pesosCapa1[15 * numNeuronasCapa1 + 5] / reduccion, pesosCapa1[16 * numNeuronasCapa1 + 5] / reduccion);
+	modificarFactorPrevioLUT(an_6_FPAA6_1, an_6_FPAA6_1_GainHold6_1_3, 6, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//NEURONAS 7 & 8 /////////////////////////////////////
 
@@ -349,10 +355,12 @@ void establecerPesos(int reduccion) {
 	//FPAA7_3 *
 	modificarPeso(an_7_FPAA7_3, an_7_FPAA7_3_SumadorNeurona7_3_1, 7, pesosCapa1[15 * numNeuronasCapa1 + 6] / reduccion, pesosCapa1[16 * numNeuronasCapa1 + 6] / reduccion, -1, -1);
 	modificarPeso(an_7_FPAA7_3, an_7_FPAA7_3_SumadorNeurona7_3_2, 7, 1, 1, pesosCapa1[17 * numNeuronasCapa1 + 6] / reduccion, pesosCapa1[18 * numNeuronasCapa1 + 6] / reduccion);
+	modificarFactorPrevioLUT(an_7_FPAA7_3, an_7_FPAA7_3_GainHold7_3_3, 7, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//FPAA7_4 *
 	modificarPeso(an_7_FPAA7_4, an_7_FPAA7_4_SumadorNeurona7_4_1, 7, pesosCapa1[17 * numNeuronasCapa1 + 7] / reduccion, pesosCapa1[18 * numNeuronasCapa1 + 7] / reduccion, -1, -1);
 	modificarPeso(an_7_FPAA7_4, an_7_FPAA7_4_SumadorNeurona7_4_2, 7, 1, 1, pesosCapa1[15 * numNeuronasCapa1 + 7] / reduccion, pesosCapa1[16 * numNeuronasCapa1 + 7] / reduccion);
+	modificarFactorPrevioLUT(an_7_FPAA7_4, an_7_FPAA7_4_GainHold7_4_3, 7, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//CAPA 2////////////////////////////////////////////////////////////
 	//NEURONAS 1 & 2 ///////////////////////////////////////////////////
@@ -365,10 +373,12 @@ void establecerPesos(int reduccion) {
 	//FPAA8_2
 	modificarPeso(an_8_FPAA8_2, an_8_FPAA8_2_SumadorNeurona8_2_1, 8, 1, 1, pesosCapa2[4 * numNeuronasCapa2 + 0] / reduccion, pesosCapa2[5 * numNeuronasCapa2 + 0] / reduccion);
 	modificarPeso(an_8_FPAA8_2, an_8_FPAA8_2_SumadorNeurona8_2_2, 8, 1, pesosCapa2[4 * numNeuronasCapa2 + 1] / reduccion, pesosCapa2[5 * numNeuronasCapa2 + 1] / reduccion, -1);
+	modificarFactorPrevioLUT(an_8_FPAA8_2, an_8_FPAA8_2_GainHold8_2_1, 8, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//FPAA8_3
 	modificarPeso(an_8_FPAA8_3, an_8_FPAA8_3_SumadorNeurona8_3_1, 8, 1, pesosCapa2[6 * numNeuronasCapa2 + 1] / reduccion, pesosCapa2[7 * numNeuronasCapa2 + 1] / reduccion, -1);
 	modificarPeso(an_8_FPAA8_3, an_8_FPAA8_3_SumadorNeurona8_3_2, 8, pesosCapa2[6 * numNeuronasCapa2 + 0] / reduccion, pesosCapa2[7 * numNeuronasCapa2 + 0] / reduccion, -1, -1);
+	modificarFactorPrevioLUT(an_8_FPAA8_3, an_8_FPAA8_3_GainHold8_3_1, 8, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//NEURONAS 3 & 4 ////////////////////////////////////////////////////
 
@@ -381,10 +391,12 @@ void establecerPesos(int reduccion) {
 	//FPAA9_1
 	modificarPeso(an_9_FPAA9_1, an_9_FPAA9_1_SumadorNeurona9_1_1, 9, 1, 1, pesosCapa2[4 * numNeuronasCapa2 + 2] / reduccion, pesosCapa2[5 * numNeuronasCapa2 + 2] / reduccion);
 	modificarPeso(an_9_FPAA9_1, an_9_FPAA9_1_SumadorNeurona9_1_2, 9, 1, pesosCapa2[4 * numNeuronasCapa2 + 3] / reduccion, pesosCapa2[5 * numNeuronasCapa2 + 3] / reduccion, -1);
+	modificarFactorPrevioLUT(an_9_FPAA9_1, an_9_FPAA9_1_GainHold9_1_1, 9, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//FPAA9_2
 	modificarPeso(an_9_FPAA9_2, an_9_FPAA9_2_SumadorNeurona9_2_1, 9, 1, pesosCapa2[6 * numNeuronasCapa2 + 3] / reduccion, pesosCapa2[7 * numNeuronasCapa2 + 3] / reduccion, -1);
 	modificarPeso(an_9_FPAA9_2, an_9_FPAA9_2_SumadorNeurona9_2_2, 9, pesosCapa2[6 * numNeuronasCapa2 + 2] / reduccion, pesosCapa2[7 * numNeuronasCapa2 + 2] / reduccion, -1, -1);
+	modificarFactorPrevioLUT(an_9_FPAA9_2, an_9_FPAA9_2_GainHold9_2_1, 9, reduccion); //restaurar el factor previo el uso de la LUT
 
 	//NEURONAS 5 & 6 ////////////////////////////////////////////////////
 
@@ -395,12 +407,14 @@ void establecerPesos(int reduccion) {
 	//FPAA9_4
 	modificarPeso(an_9_FPAA9_4, an_9_FPAA9_4_SumadorNeurona9_4_1, 9, 1, 1, pesosCapa2[4 * numNeuronasCapa2 + 4] / reduccion, pesosCapa2[5 * numNeuronasCapa2 + 4] / reduccion);
 	modificarPeso(an_9_FPAA9_4, an_9_FPAA9_4_SumadorNeurona9_4_2, 9, 1, pesosCapa2[4 * numNeuronasCapa2 + 5] / reduccion, pesosCapa2[5 * numNeuronasCapa2 + 5] / reduccion, -1);
+	modificarFactorPrevioLUT(an_9_FPAA9_4, an_9_FPAA9_4_GainHold9_4_1, 9, reduccion); //restaurar el factor previo el uso de la LUT
 
 	///////////////
 
 	//FPAA10_1
 	modificarPeso(an_10_FPAA10_1, an_10_FPAA10_1_SumadorNeurona10_1_1, 10, 1, pesosCapa2[6 * numNeuronasCapa2 + 5] / reduccion, pesosCapa2[7 * numNeuronasCapa2 + 5] / reduccion, -1);
 	modificarPeso(an_10_FPAA10_1, an_10_FPAA10_1_SumadorNeurona10_1_2, 10, pesosCapa2[6 * numNeuronasCapa2 + 4] / reduccion, pesosCapa2[7 * numNeuronasCapa2 + 4] / reduccion, -1, -1);
+	modificarFactorPrevioLUT(an_10_FPAA10_1, an_10_FPAA10_1_GainHold10_1_1, 10, reduccion); //restaurar el factor previo el uso de la LUT
 }
 
 void establecerValoresTransferFunction(int defecto) {
