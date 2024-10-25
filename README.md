@@ -1,4 +1,4 @@
-![alt text]([https://github.com/[username]/[reponame]/blob/[branch]/image.jpg](https://github.com/artecs-group/FPAA-NNs/blob/master/blob/clusterX10.pdf?raw=true)
+![alt text](https://github.com/artecs-group/FPAA-NNs/blob/master/blob/clusterX10.pdf?raw=true)
 
 
 # Cluster of FPAAs to recognize images using neural networks
