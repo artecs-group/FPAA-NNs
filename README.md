@@ -1,3 +1,6 @@
+![alt text](https://github.com/artecs-group/FPAA-NNs/blob/master/blob/clusterX10.pdf?raw=true)
+
+
 # Cluster of FPAAs to recognize images using neural networks
 This software manages a cluster of 40 Anadigm FPAAs placed on 10 Quad Apex V2.0 development boards, allowing the prototyping of analog applications using FPAAs currently commercially available FPAAs prior to being implemented through more advanced FPAA devices or custom IC design, using the Dynamic Reconfiguration capability of the FPAAs.
 
