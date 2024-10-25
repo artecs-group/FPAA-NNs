@@ -6,6 +6,8 @@ This software manages a cluster of 40 Anadigm FPAAs placed on 10 Quad Apex V2.0 
 
 Currently. this cluster classifies 28×28 MNIST images through a 19-8-6-4 Analog NN with 19-input metrics based on DCT compression.
 
+To perform the classification, the flow shown in the following image is executed.
+
 ![alt text](https://github.com/artecs-group/FPAA-NNs/blob/master/blob/pasosReconfi.png?raw=true)
 
 ## Acknowledgements
